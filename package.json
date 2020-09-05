@@ -2,6 +2,7 @@
   "name": "library-doc-components",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://thecrash.github.io/ps-react-library/",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -70,7 +71,7 @@
     "gen:docs-watch": "yarn run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy:docs": "npm run build:docs",
+    "predeploy:docs": "yarn run build:docs",
     "deploy:docs": "gh-pages -d build"
   },
   "eslintConfig": {
