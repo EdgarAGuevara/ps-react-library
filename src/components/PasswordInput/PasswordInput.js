@@ -23,7 +23,7 @@ class PasswordInput extends React.Component {
   render() {
     const { htmlId, value, label, error, onChange, placeholder, maxLength,
       showVisibilityToggle, quality, ...props } = this.props;
-      
+
     const { showPassword } = this.state;
 
     return (
@@ -41,7 +41,7 @@ class PasswordInput extends React.Component {
         {
           showVisibilityToggle &&
           <a
-            href="#"
+            href="#!"
             onClick={this.toggleShowPassword}
             style={{ marginLeft: 5 }}>
             <EyeIcon />
