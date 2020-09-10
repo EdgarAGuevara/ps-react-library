@@ -1,0 +1,21 @@
+{
+  "name": "ps-react-library-thecrash",
+  "author": {
+    "name": "Edgar A Guevara",
+    "email": "edgarguevara33@gmail.com"
+  },
+  "version": "0.1.1",
+  "main": "./index.js",
+  "keywords": [
+    "components",
+    "react",
+    "react-components",
+    "toolkit",
+    "pluralsight"
+  ],
+  "homepage": "http://thecrash.github.io/ps-react-library/",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

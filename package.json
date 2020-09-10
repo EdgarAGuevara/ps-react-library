@@ -1,5 +1,5 @@
 {
-  "name": "ps-react-library-thecrash",
+  "name": "ps-react-library-thecrash-build-template",
   "version": "0.1.1",
   "main": "./lib/index.js",
   "engines": {
@@ -19,7 +19,7 @@
     "toolkit",
     "pluralsight"
   ],
-  "private": false,
+  "private": true,
   "homepage": "http://thecrash.github.io/ps-react-library/",
   "dependencies": {
     "react": "^16.13.1",
@@ -35,7 +35,8 @@
     "test": "node scripts/test.js",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "prebuild:lib": "rimraf lib",
-    "build:lib": "yarn run build:commonjs && yarn run build:css",
+    "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
+    "build:copy-files": "node scripts/copyBuildFiles.js",
     "predeploy:docs": "yarn run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
